@@ -4,7 +4,7 @@ class Employe:
         self.nom = nom
         self.prenom = prenom
         self.voitureService = None
-        Set - Content.\atelier4.py @ "
+
 
         class Employe:
             def __init__(self, numeroPermis, nom, prenom):
@@ -30,7 +30,7 @@ class Employe:
             def retirerVoiture(self):
                 if self.voitureService:
                     self.voitureService.employe = None
-                    self.voitureService =
+                    self.voitureService = None
 
                     class VoitureService:
                         def __init__(self, marque, modele, matricule):
@@ -47,4 +47,23 @@ class Employe:
                                 print("Employe:", self.employe.nom, self.employe.prenom)
                             else:
                                 print("Aucun employe")
+
+                                emp1 = Employe("P12345", "Dupont", "Jean")
+                                emp2 = Employe("P67890", "Martin", "Sophie")
+
+                                v1 = VoitureService("Toyota", "Corolla", "ABC123")
+                                v2 = VoitureService("Honda", "Civic", "XYZ789")
+
+                                emp1.affecterVoiture(v1)
+                                emp2.affecterVoiture(v2)
+
+                                print("=== Informations Employes ===")
+                                emp1.afficherInformations()
+                                print()
+                                emp2.afficherInformations()
+
+                                print("\n=== Informations Voitures ===")
+                                v1.afficherInformations()
+                                print()
+                                v2.afficherInformations()
 
