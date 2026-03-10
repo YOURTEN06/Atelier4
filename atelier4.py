@@ -12,7 +12,7 @@ class Employe:
                 if self.voitureService:
                     print("Voiture:", self.voitureService.marque, self.voitureService.modele)
                 else:
-                    print("Aucune voiture de service attribuee")
+                    print("Aucune voiture de service disponible")
 
             def affecterVoiture(self, voiture):
                 if self.voitureService is None:
