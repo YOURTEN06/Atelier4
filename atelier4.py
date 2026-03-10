@@ -6,13 +6,13 @@ class Employe:
                 self.voitureService = None
 
             def afficherInformations(self):
-                print("Permis:", self.numeroPermis)
-                print("Nom:", self.nom)
+                print("Numero de permis:", self.numeroPermis)
+                print("Nom de l'employe:", self.nom)
                 print("Prenom:", self.prenom)
                 if self.voitureService:
                     print("Voiture:", self.voitureService.marque, self.voitureService.modele)
                 else:
-                    print("Aucune voiture")
+                    print("Aucune voiture de service attribuee")
 
             def affecterVoiture(self, voiture):
                 if self.voitureService is None:
