@@ -9,6 +9,12 @@ class Employe:
                 print("Numero de permis:", self.numeroPermis)
                 print("Nom employe:", self.nom)
                 print("Prenom:", self.prenom)
+
+
+
+
+
+
                 if self.voitureService:
                     print("Voiture:", self.voitureService.marque, self.voitureService.modele)
                 else:
