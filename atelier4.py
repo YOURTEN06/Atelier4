@@ -30,5 +30,21 @@ class Employe:
             def retirerVoiture(self):
                 if self.voitureService:
                     self.voitureService.employe = None
-                    self.voitureService = None
+                    self.voitureService =
+
+                    class VoitureService:
+                        def __init__(self, marque, modele, matricule):
+                            self.marque = marque
+                            self.modele = modele
+                            self.matricule = matricule
+                            self.employe = None
+
+                        def afficherInformations(self):
+                            print("Marque:", self.marque)
+                            print("Modele:", self.modele)
+                            print("Matricule:", self.matricule)
+                            if self.employe:
+                                print("Employe:", self.employe.nom, self.employe.prenom)
+                            else:
+                                print("Aucun employe")
 
